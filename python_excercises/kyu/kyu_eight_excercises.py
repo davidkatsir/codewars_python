@@ -99,6 +99,20 @@ print("*" * 100)
 # Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
 
 def make_negative(number):
+    if number <= 0:
+        return number
+    elif number > 0:
+        return -number
+
+
+# ****************************************************************************************************
+print("*" * 100)
+
+# Convert boolean values to strings 'Yes' or 'No'.
+# Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+
+def bool_to_word(boolean):
+    # TODO
 
 
 # ****************************************************************************************************
