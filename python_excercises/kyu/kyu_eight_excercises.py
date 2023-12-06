@@ -69,7 +69,7 @@ def solution(string):
 
 
 # ****************************************************************************************************
-print("*" * 100)
+# print("*" * 100)
 
 
 # Convert a Number to a String!
@@ -85,7 +85,7 @@ def number_to_string(num):
 
 
 # ****************************************************************************************************
-print("*" * 100)
+# print("*" * 100)
 
 
 # Return Negative
@@ -106,13 +106,55 @@ def make_negative(number):
 
 
 # ****************************************************************************************************
-print("*" * 100)
+# print("*" * 100)
 
 # Convert boolean values to strings 'Yes' or 'No'.
 # Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
 
 def bool_to_word(boolean):
-    # TODO
+    return "Yes" if boolean else "No"
+
+
+# Example usage:
+boolean_input = bool_to_word(True)
+print(boolean_input)  # Output: "Yes"
+
+boolean_input = bool_to_word(False)
+print(boolean_input)  # Output: "No"
+
+# ****************************************************************************************************
+print("*" * 100)
+
+
+# Opposite number
+# Very simple, given an integer or a floating-point number, find its opposite.
+# Examples:
+# 1: -1
+# 14: -14
+# -34: 34
+def opposite(number):
+    return float(number) * -1
+
+
+# ****************************************************************************************************
+# print("*" * 100)
+
+# Remove First and Last Character
+# It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string.
+# You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+def remove_char(s):
+    s_to_list = list(s)
+    end_s_list = s_to_list[1:-1]
+    return ''.join(end_s_list)
+
+
+# ****************************************************************************************************
+# print("*" * 100)
+
+# Square(n) Sum
+# Complete the square sum function so that it squares each number passed into it and then sums the results together.
+# For example, for [1, 2, 2] it should return 9 because 1**2 + 2**2 + 2**2 = 9
+def square_sum(numbers):
 
 
 # ****************************************************************************************************
